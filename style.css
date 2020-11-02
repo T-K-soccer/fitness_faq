@@ -256,10 +256,13 @@ p {
 .drawer-content {
   position: absolute;
   top: 90px;
-  opacity: 0;
+  /* opacity: 0; */
+  visibility: hidden;
+  /* display: none; */
+  /* transform: translateY(-200%); */
   width: 100%;
   background-color: #ffffff;
-  transition: opacity 0.3s;
+  /* transition: all 0.5s; */
   color: #333;
 }
 .drawer-item {
@@ -275,7 +278,8 @@ p {
   color: #333;
 }
 #drawer-check:checked ~ .drawer-content {
-  opacity: 1;
+  /* transform: translateY(0%); */
+  visibility: visible;
 }
 #header-nav-outer {
   max-width: 1020px;
